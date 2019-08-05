@@ -121,11 +121,31 @@
 ############################ Armazenando suas funções em módulos ############################
 ############################ Importando um módulo completo  ##############################
 
+#from .funcaoPizza import pizza  ##ASSIM SÓ IMPORTO A FUNÇÃO PIZZA DO ARQUIVO
+#from .funcaoSorvete import *    ##ASSIM EU IMPORTO TODAS AS FUNÇÕES DO ARQUIVO
+
+#from funcaoPizza import pizza
+
+#print(pizza(23,"teste01","teste02","teste03"))
+# num01 = 3
+# num02 = 34
+# print(f"numero 01 = {num01}")
+# print(f"numero 02 = {num02}")
 
 
+import funcaoPizza
+
+print(funcaoPizza.pizza2())
 
 
-
-
-
-
+#####################################################
+#                          OBSERVAÇÃO
+#####################################################
+############################################################3
+# Realmente isso é uma peculiaridade do PyCharm, você precisa informar
+# para o PyChar que no diretório onde estão os teus códigos também existem módulos que podem ser importados.
+#
+# Para fazer isso basta clicar com o botão direito em cima da pasta onde se encontram os teus códigos
+# e ir até a opção "Mark Directory as" e clique na opção "Sources Root". Isso será o suficiente para
+# você conseguir realizar os imports dos módulos que você criar.
+####################################################################################3
