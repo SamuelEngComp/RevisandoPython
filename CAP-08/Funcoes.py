@@ -149,3 +149,16 @@ print(funcaoPizza.pizza2())
 # e ir até a opção "Mark Directory as" e clique na opção "Sources Root". Isso será o suficiente para
 # você conseguir realizar os imports dos módulos que você criar.
 ####################################################################################3
+
+#from funcaoSorvete import sorveteSabor ---->>> IMPORTANTO SÓ A FUNÇÃO SORVETESABOR
+#import funcaoSorvete                   ----->>> IMPORTANDO TODAS AS FUNÇÕES
+
+# alem disso eu posso importar varias funções no mesmo comando, bastando separar por virgular
+# from funcaoPizza import pizza,pizza2 -->> dessa forma
+
+#POSSO RENOMAER O IMPORT -- EXEMPLO:
+#import funcaoSorvete AS FS --->>> UTILIZANDO O 'AS' PARA RENOMEAR O IMPORT
+
+# IMPORTANDO TODAS AS FUNÇÕES DE UM MODULO
+# import funcaoPizza *
+
