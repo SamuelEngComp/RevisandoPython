@@ -34,6 +34,9 @@ class carro(object): ## CLASSE PAI
         self.modelo = modelo
         self.ano = ano
 
+    def andar(self):
+        print("Esse metodo pertence a classe pai")
+
 class carroEletrico(carro):  ## HERANÇA - CLASSE FILHA
     def __init__(self, modelo, ano, rodas):
         # super(carroEletrico,self).__init__(modelo, ano)  ## aqui no metodo INIT não precisa colocar o self
@@ -44,10 +47,15 @@ class carroEletrico(carro):  ## HERANÇA - CLASSE FILHA
     def retorneModeloAno(self):
         return self.modelo + " " + self.ano + " " + self.rodas
 
+    def andar(self):
+        print("Esse metodo pertence a classe filha")
+
 meuCarro = carroEletrico("celta",1992,4)
 print(meuCarro.modelo)
 print(meuCarro.ano)
 print(str(meuCarro.rodas))
+
+meuCarro.andar() ## SOBRESCREVER UM METODO DA CLASS PAI, BASTA ESCREVER O MESMO METODO NA CLASS FILHA
 
 carroNovo = carro("T-CROSS", 2020)
 print(carroNovo.modelo)
