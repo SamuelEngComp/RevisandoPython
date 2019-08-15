@@ -31,5 +31,6 @@ print("Status code: ",s.status_code)
 
 response02 = s.json()
 print(response02.keys())
+print(response02.values())
 
 print("Itens: ", response02['total_count'])
