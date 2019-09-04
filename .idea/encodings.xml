@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CAP-19/animais.txt" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/CAP-19/arquivoLog.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/CAP-22/saida.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/CAP-23/EnviandoEmailHTML.py" charset="UTF-8" />
   </component>
 </project>
