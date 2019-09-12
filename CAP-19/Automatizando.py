@@ -1,6 +1,6 @@
 # CORRESPONDÊNCIA DE PADRÕES COM EXPRESSÕES REGULARES
 
-# import re
+#import re
 #
 # numCelular = re.compile(r"(\d\d\d-\d)-(\d\d\d\d)-(\d\d\d\d)")
 # num = numCelular.search("084-9-9191-2186")

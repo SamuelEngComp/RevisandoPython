@@ -1,7 +1,10 @@
 ## FORMATO DE ARQUIVO CSV
 # Fazendo parse dos cabeçalhos de arquivos CSV
 import csv
+import tkinter
 from matplotlib import pyplot as p
+
+
 
 # arquivoCSV = open('testePlanilhaCSV.csv','r',encoding='utf-8') #abre o arquivo em modo leitura, não esquecer do encoding
 # leitura = csv.reader(arquivoCSV) # ler o arquivo csv

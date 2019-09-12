@@ -11,12 +11,12 @@
 # print (mensagem)
 #
 # #agora vou utilizar funções da String
-# mensagemNova = "samuel lima de farias"
+mensagemNova = "samuel lima de farias"
 
 # so funcionou pq a versão foi alterada pra 3.7
-# print(mensagemNova.title())
-# print(mensagemNova.lower())
-# print(mensagemNova.upper())
+print(mensagemNova.title())
+print(mensagemNova.lower())
+print(mensagemNova.upper())
 
 #####################################################################################33
 

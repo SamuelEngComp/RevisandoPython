@@ -36,36 +36,36 @@
 
 ##criar novo arquivo e escrever nele
 ## 1) criando um arquivo e escrevendo nele
-# arquivoNovo = open('nomes.txt','w')
-# arquivoNovo.write("Estou escrevendo no arquivo novo: SAMUEL")
-# arquivoNovo.close()
+arquivoNovo = open('nomes.txt','w')
+arquivoNovo.write("Estou escrevendo no arquivo novo: SAMUEL - 2019")
+arquivoNovo.close()
 
 ## 2) abrindo um arquivo e lendo ele
-# arquivoNovoLeitura = open('nomes.txt','r')
-# arquivoLido = arquivoNovoLeitura.read()
-# print(arquivoLido)
-# arquivoNovoLeitura.close()
+arquivoNovoLeitura = open('nomes.txt','r')
+arquivoLido = arquivoNovoLeitura.read()
+print(arquivoLido)
+arquivoNovoLeitura.close()
 
 ## 1) abrindo um arquivo e escrevendo nele
-# arquivoNovoLeitura02 = open('nomes.txt','r')
-# arquivoLido02 = arquivoNovoLeitura02.readlines()
+arquivoNovoLeitura02 = open('nomes.txt','r')
+arquivoLido02 = arquivoNovoLeitura02.readlines()
 
 ## 2) escrevendo nele
-# arquivoLido02.append(" Agora eu estou adicionando uma nova linha ao meu arquivo")
+arquivoLido02.append(" Agora eu estou adicionando uma nova linha ao meu arquivo 2")
 
 ## 3) Abre o arquivo no modo escrita
-# arquivoNovoLeitura02 = open('nomes.txt','w')
+arquivoNovoLeitura02 = open('nomes.txt','w')
 
 ## 4) Adiciona ao arquivo o texto que foi escrito
-# arquivoNovoLeitura02.writelines(arquivoLido02)
+arquivoNovoLeitura02.writelines(arquivoLido02)
 
 ## 5) fecha o arquivo
-# arquivoNovoLeitura02.close()
+arquivoNovoLeitura02.close()
 
 ## 6) Abre o arquivo no modo de leitura
-# arquivoNovoLeitura02 = open('nomes.txt','r')
-# arquivoLido02 = arquivoNovoLeitura02.read()
-# print(arquivoLido02)
+arquivoNovoLeitura02 = open('nomes.txt','r')
+arquivoLido02 = arquivoNovoLeitura02.read()
+print(arquivoLido02)
 
 
 ## PODEMOS ABRIR UM ARQUIVO EM MODOS DISTINTOS

@@ -1,8 +1,0 @@
-2019-08-14 20:26:04,044 - DEBUG - Inicio do programa
-2019-08-14 20:26:39,557 - DEBUG - Inicio fatorial (5%)
-2019-08-14 20:26:39,557 - DEBUG - é 1, total de 1
-2019-08-14 20:26:39,557 - DEBUG - é 2, total de 2
-2019-08-14 20:26:39,557 - DEBUG - é 3, total de 6
-2019-08-14 20:26:39,557 - DEBUG - é 4, total de 24
-2019-08-14 20:26:39,557 - DEBUG - é 5, total de 120
-2019-08-14 20:26:44,807 - DEBUG - Fim fatorial(5%)

@@ -19,20 +19,20 @@ semaforo02 = {
 
 # LOGGING
 import logging
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-# logging.debug("Inicio do programa")
-#
-# def fatorial(numero):
-#     logging.debug("Inicio fatorial (%s%%)"%(numero))
-#     total = 1
-#     for i in range(1, numero+1):
-#         total *= i
-#         logging.debug("é " + str(i) + ", total de " + str(total))
-#
-#     logging.debug("Fim fatorial(%s%%)"%(numero))
-#     return total
-#
-# print(fatorial(5))
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.debug("Inicio do programa")
+
+def fatorial(numero):
+    logging.debug("Inicio fatorial (%s%%)"%(numero))
+    total = 1
+    for i in range(1, numero+1):
+        total *= i
+        logging.debug("é " + str(i) + ", total de " + str(total))
+
+    logging.debug("Fim fatorial(%s%%)"%(numero))
+    return total
+
+print(fatorial(5))
 
 ## GRAVANDO O LOG EM UM ARQUIVO.TXT
 arquivoLog = open("arquivoLog.txt","w")
