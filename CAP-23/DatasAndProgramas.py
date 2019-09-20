@@ -28,6 +28,8 @@ import time
 #     print(j , " --- ")
 
 # Arredondando números
+from numpy.random.tests import data
+
 """
 Basta passar o número que você quer arredondar, além de um
 segundo argumento opcional que representa para quantos dígitos após o ponto
@@ -103,7 +105,7 @@ conversao02 = datetime.datetime.fromtimestamp(time.time())
 print(conversao02) #2019-08-22 15:47:00.892290
 
 dataDeNascimento = datetime.datetime(1992,12,24,0,0,0)
-dataDeHoje = datetime.datetime(2019,8,22,0,0,0)
+dataDeHoje = datetime.datetime(dataAgora.year,dataAgora.month,dataAgora.day,0,0,0)
 minhaIdadeHoje = dataDeHoje - dataDeNascimento
 print(minhaIdadeHoje)
 
