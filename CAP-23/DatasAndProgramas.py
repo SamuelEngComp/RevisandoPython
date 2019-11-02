@@ -112,6 +112,7 @@ print(minhaIdadeHoje)
 anos = minhaIdadeHoje.days/365
 print(anos)
 
+print( "A data de hoje é: ", dataDeHoje.day, dataDeHoje.month,dataDeHoje.year)
 
 
 ################################################
@@ -123,21 +124,10 @@ representa uma duração, em vez de um instante no tempo
 """
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+testeDataPorExtenso = datetime.datetime.now()
+print(testeDataPorExtenso.day)
+print(testeDataPorExtenso)
+print(testeDataPorExtenso.year)
 
 
 
