@@ -52,9 +52,13 @@ class ReceberArquivoCSV():
     # pegando o total de BANCAS no mês
     def totalDeBancas(self):
         totalBancasTCC = self.tipo.count('BANCA TCC')
+        totalBancasDeTCC = self.tipo.count('BANCA DE TCC')
         totalBancasMestrado = self.tipo.count('BANCA MESTRADO')
+        totalBancasDeMestrado = self.tipo.count('BANCA DE MESTRADO')
         totalBancasDoutorado = self.tipo.count('BANCA DOUTORADO')
-        totalDeBanca = totalBancasTCC + totalBancasMestrado + totalBancasDoutorado
+        totalBancasDeDoutorado = self.tipo.count('BANCA DE DOUTORADO')
+        totalDeBanca = totalBancasDeDoutorado + totalBancasDeMestrado + totalBancasDeTCC + \
+                       totalBancasTCC + totalBancasMestrado + totalBancasDoutorado
         return totalDeBanca
 
     # pegando o total de SESSÃO no mês
@@ -80,7 +84,7 @@ class ReceberArquivoCSV():
 
     # convertendo o tempo de minutos em horas
     def conversaoTempo(tempoTotalEmMinutos):
-        tempoEmHoras = tempoTotalEmMinutos / 60
+        tempoEmHoras = tempoTotalEmMinutos/60
         return round(tempoEmHoras, 2)
 
     # PEGANDO SÓ OS PARTICIPATES DAS SESSÕES:
@@ -200,7 +204,7 @@ class ReceberArquivoCSV():
                     self.tipo[i] == 'VÍDEOCONFERENCIA EBSERH'):
                 tempoEbserh += int(self.tempo[i])
 
-        tempoEmHoras = self.conversaoTempo(tempoEbserh)
+        tempoEmHoras = self.conversaoTempo(self.tempoEbserh)
 
         return tempoEmHoras
 
@@ -219,32 +223,3 @@ class ReceberArquivoCSV():
         tempoEmHoras = self.conversaoTempo(tempoBanca)
 
         return tempoEmHoras
-
-dadosJaneiro = ReceberArquivoCSV("janeiro2018.csv")
-dadosFevereiro = ReceberArquivoCSV("fevereiro2018.csv")
-dadosMarco = ReceberArquivoCSV("marco2018.csv")
-dadosAbril = ReceberArquivoCSV("abril2018.csv")
-dadosMaio = ReceberArquivoCSV("maio2018.csv")
-dadosJunho = ReceberArquivoCSV("junho2018.csv")
-dadosJulho = ReceberArquivoCSV("julho2018.csv")
-dadosAgosto = ReceberArquivoCSV("agosto2018.csv")
-dadosSetembro = ReceberArquivoCSV("setembro2018.csv")
-dadosOutubro = ReceberArquivoCSV("outubro2018.csv")
-dadosNovembro = ReceberArquivoCSV("novembro2018.csv")
-dadosDezembro = ReceberArquivoCSV("dezembro2018.csv")
-
-ano = ["Jan: ", dadosJaneiro.totalDeSIGs(),"fev: ", dadosFevereiro.totalDeSIGs(),
-       "mar: ", dadosMarco.totalDeSIGs(),"abr: ", dadosAbril.totalDeSIGs(),
-        "mai: ", dadosMaio.totalDeSIGs(),"jun: ", dadosJunho.totalDeSIGs(),
-       "jul: ", dadosJulho.totalDeSIGs(),"ago: ", dadosAgosto.totalDeSIGs(),
-       "set: ", dadosSetembro.totalDeSIGs(),"out: ", dadosOutubro.totalDeSIGs(),
-       "nov: ", dadosNovembro.totalDeSIGs(),"dez: ", dadosDezembro.totalDeSIGs()]
-
-print(ano)
-
-ano2018 = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"]
-valores = [dadosJaneiro.totalDeSIGs(),dadosFevereiro.totalDeSIGs(),dadosMarco.totalDeSIGs(),
-           dadosAbril.totalDeSIGs(),dadosMaio.totalDeSIGs(),dadosJunho.totalDeSIGs(),
-           dadosJulho.totalDeSIGs(),dadosAgosto.totalDeSIGs(),dadosSetembro.totalDeSIGs(),
-           dadosOutubro.totalDeSIGs(),dadosNovembro.totalDeSIGs(),dadosDezembro.totalDeSIGs()]
-
