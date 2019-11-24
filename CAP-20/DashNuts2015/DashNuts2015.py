@@ -339,6 +339,8 @@ participantesPorCategoria = [dadosDoAno.participantesApenasDasBancas(), dadosDoA
                              dadosDoAno.participantesApenasDasSessoes(), dadosDoAno.participantesApenasDasVideoEbserh(),
                              dadosDoAno.participantesApenasDasVideoAulas()]
 
+
+
 ax2 = fig.add_subplot(gs[1, :-1])
 ax2.set_title("PARTICIPANTES POR ATIVIDADE", fontsize = 25)
 ax2.barh(categorias, participantesPorCategoria, color = "orange")

@@ -223,3 +223,33 @@ class ReceberArquivoCSV():
         tempoEmHoras = self.conversaoTempo(tempoBanca)
 
         return tempoEmHoras
+
+
+    def tempoBancasNovo(self):
+        tempoBanca = 0
+        for i in range(len(self.tipo)):
+            if (self.tipo[i] == 'BANCA TCC' or self.tipo[i] == 'BANCA DE TCC' or
+                    self.tipo[i] == 'BANCA MESTRADO' or self.tipo[i] == 'BANCA DE MESTRADO' or
+                    self.tipo[i] == 'BANCA DOUTORADO' or self.tipo[i] == 'BANCA DE DOUTORADO' or
+                    self.tipo[i] == 'BANCA DE QUALIFICAÇÃO DE MESTRADO' or
+                    self.tipo[i] == 'BANCA DE QUALIFICAÇÃO DE DOUTORADO' or
+                    self.tipo[i] == 'BANCA DE DISSERTAÇÃO DE MESTRADO' or
+                    self.tipo[i] == 'BANCA DE DISSERTAÇÃO DE DOUTORADO'):
+                tempoBanca += int(self.tempo[i])
+
+        tempoEmHoras = round(tempoBanca/60, 2)
+
+        return tempoEmHoras
+
+
+
+
+tempoBanca2015 = ReceberArquivoCSV("atividade2015.csv")
+tempoBanca2016 = ReceberArquivoCSV("atividadesNuts2016.csv")
+tempoBanca2017 = ReceberArquivoCSV("atividadesNuts2017.csv")
+tempoBanca2018 = ReceberArquivoCSV("ATIVIDADES NUTS 2018.csv")
+
+print("Tempo bancas 2015: ", tempoBanca2015.tempoBancasNovo())
+print("Tempo bancas 2016: ", tempoBanca2016.tempoBancasNovo())
+print("Tempo bancas 2017: ", tempoBanca2017.tempoBancasNovo())
+print("Tempo bancas 2018: ", tempoBanca2018.tempoBancasNovo())
